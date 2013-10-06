@@ -63,8 +63,11 @@ class Mode(BaseMode):
         # self.msg(channel, '=== Meeting #%s %s. Next talk will be #%s ===',
         #          self.meeting.number, action, self.next.talk_id)
         self.msg(channel,
-                 '=== Meeting started. The next talk will be #%d. ===',
-                 self.next.id,
+                 '=== Meeting started: www.python.org/psf/codeofconduct/ ==='
+        )
+        self.msg(channel,
+                 '=== The next talk will be #%d. ===',
+                 self.next.id
         )
 
         # Now ask the folks in channel for names
